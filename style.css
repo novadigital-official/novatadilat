@@ -535,7 +535,7 @@ h1, h2, h3, h4 {
     box-shadow: 0 -4px 16px rgba(0,0,0,0.08);
     z-index: 999;
     padding: 8px 12px;
-    padding-bottom: calc(8px + env(safe-area-inset-bottom, 0px));
+    padding-bottom: calc(12px + env(safe-area-inset-bottom, 0px));
     gap: 8px;
     border-top: 1px solid var(--surface-border);
 }
@@ -545,12 +545,12 @@ h1, h2, h3, h4 {
     align-items: center;
     justify-content: center;
     gap: 6px;
-    padding: 10px 6px;
+    padding: 10px 8px;
     border-radius: var(--radius-sm);
-    font-size: 0.82rem;
+    font-size: 0.84rem;
     font-weight: 800;
     text-decoration: none;
-    min-height: 42px;
+    min-height: 46px;
     white-space: nowrap;
 }
 .sticky-call {
