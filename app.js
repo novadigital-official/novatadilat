@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const districtText = projectDistrict ? projectDistrict.options[projectDistrict.selectedIndex].text : 'Muratpaşa / Lara';
             const priceText = totalEstimateVal ? totalEstimateVal.textContent : '₺250.000';
 
-            const message = `Merhaba Nova Tadilat, web sitenizden ulaştım.%0A%0A*ÜCRETSİZ YERİNDE KEŞİF TALEBİ:*%0A• Proje: ${encodeURIComponent(typeText)}%0A• Alan: ${encodeURIComponent(areaText)}%0A• Kapsam: ${encodeURIComponent(scopeText)}%0A• İlçe / Bölge: ${encodeURIComponent(districtText)}%0A• Tahmini Bütçe Aralığı: ${encodeURIComponent(priceText)}%0A%0AMimarınızın keşif için iletişime geçmesini rica ederim.`;
+            const message = `Merhaba, AntalyadaTadilat.com.tr üzerinden ulaştım.%0A%0A*ÜCRETSİZ YERİNDE KEŞİF TALEBİ:*%0A• Proje: ${encodeURIComponent(typeText)}%0A• Alan: ${encodeURIComponent(areaText)}%0A• Kapsam: ${encodeURIComponent(scopeText)}%0A• İlçe / Bölge: ${encodeURIComponent(districtText)}%0A• Tahmini Bütçe Aralığı: ${encodeURIComponent(priceText)}%0A%0AMimarınızın keşif için iletişime geçmesini rica ederim.`;
 
             window.open(`https://wa.me/905070871789?text=${message}`, '_blank');
         });
