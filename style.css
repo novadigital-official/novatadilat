@@ -59,34 +59,7 @@ h1, h2, h3, h4 {
     padding: 0 16px;
 }
 
-/* 1. TOP NOTICE BAR */
-.top-notice-bar {
-    background: var(--base-dark);
-    color: #F8FAFC;
-    padding: 6px 0;
-    font-size: 0.76rem;
-    font-weight: 600;
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-.top-notice-bar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-}
-.top-notice-bar .notice-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    white-space: nowrap;
-}
-.top-notice-bar a {
-    color: #FCD34D;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-/* 2. SITE HEADER (52px COMPACT SINGLE-LINE) */
+/* 1. SITE HEADER (54px COMPACT SINGLE-LINE) */
 .site-header {
     background: #FFFFFF;
     border-bottom: 1px solid var(--surface-border);
