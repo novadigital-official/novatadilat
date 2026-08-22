@@ -10,16 +10,6 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="google-site-verification" content="google683b96f9e18d1ed7">
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-J5RGY2ZVYD"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-J5RGY2ZVYD');
-    </script>
-
     <!-- CANONICAL -->
     <link rel="canonical" href="https://antalyadatadilat.com.tr/">
 
@@ -44,11 +34,11 @@
     <meta name="geo.position" content="36.9081;30.6558">
     <meta name="ICBM" content="36.9081, 30.6558">
 
-    <!-- FONTS & ICONS -->
+    <!-- FONTS & ICONS (OPTIMIZED NON-BLOCKING) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600..900;1,9..144,600..900&family=Instrument+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Instrument+Sans:wght@400;600;700;800&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" media="print" onload="this.media='all'">
     
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="style.css">
@@ -114,8 +104,8 @@
     <header class="site-header">
         <div class="container">
             <a href="#" class="brand-box">
-                <img src="images/logo.png" alt="Nova Tadilat Logo" class="brand-logo-img" style="width: 44px; height: 44px; border-radius: 10px; object-fit: contain; background: #fff; padding: 2px; border: 1.5px solid rgba(212,175,55,0.6); margin-right: 10px;">
-                <span class="brand-name">ANTALYA'DA <span>TADİLAT</span></span>
+                <img src="images/logo.png" alt="Nova Tadilat Logo" class="brand-logo-img" width="44" height="44" style="width: 44px; height: 44px; border-radius: 10px; object-fit: contain; background: #fff; padding: 2px; border: 1.5px solid rgba(212,175,55,0.6); margin-right: 10px;">
+                <span class="brand-name">NOVA <span>TADİLAT</span></span>
             </a>
             <div class="header-actions">
                 <a href="tel:05070871789" class="btn btn-outline header-phone-btn">
@@ -241,7 +231,7 @@
             <div class="services-grid">
                 <!-- SERVICE 1 -->
                 <div class="service-card featured">
-                    <img src="images/tadilat_daire.jpg" alt="Komple Daire Tadilatı Antalya" class="service-img">
+                    <img src="images/tadilat_daire.jpg" alt="Komple Daire Tadilatı Antalya" class="service-img" width="800" height="500" loading="lazy" decoding="async">
                     <div class="service-body">
                         <span class="service-tag"><i class="fa-solid fa-house-chimney"></i> DAİRE RENOVASYONU</span>
                         <h3 class="service-title">Komple Daire & Ev Tadilatı</h3>
@@ -261,7 +251,7 @@
 
                 <!-- SERVICE 2 -->
                 <div class="service-card">
-                    <img src="images/tadilat_villa.jpg" alt="Lüks Villa Tadilatı Antalya Döşemealtı" class="service-img">
+                    <img src="images/tadilat_villa.jpg" alt="Lüks Villa Tadilatı Antalya Döşemealtı" class="service-img" width="800" height="500" loading="lazy" decoding="async">
                     <div class="service-body">
                         <span class="service-tag"><i class="fa-solid fa-gem"></i> VİLLA & LÜKS KONUT</span>
                         <h3 class="service-title">Lüks Villa Renovasyonu & Dış Cephe</h3>
@@ -281,7 +271,7 @@
 
                 <!-- SERVICE 3 -->
                 <div class="service-card">
-                    <img src="images/tadilat_banyo_mutfak.jpg" alt="Banyo ve Mutfak Yenileme Antalya" class="service-img">
+                    <img src="images/tadilat_banyo_mutfak.jpg" alt="Banyo ve Mutfak Yenileme Antalya" class="service-img" width="800" height="500" loading="lazy" decoding="async">
                     <div class="service-body">
                         <span class="service-tag"><i class="fa-solid fa-sink"></i> ISLAK HACİM & MOBİLYA</span>
                         <h3 class="service-title">Banyo & Mutfak Özel Tasarım</h3>
@@ -480,5 +470,21 @@
     </div>
 
     <script src="app.js"></script>
+
+    <!-- Google tag (gtag.js) - Deferred Non-blocking -->
+    <script>
+      window.addEventListener('load', function() {
+        var s = document.createElement('script');
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-J5RGY2ZVYD';
+        s.async = true;
+        document.body.appendChild(s);
+        s.onload = function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-J5RGY2ZVYD');
+        };
+      });
+    </script>
 </body>
 </html>
