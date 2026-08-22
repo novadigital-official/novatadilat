@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function calculateEstimate() {
         if (!projectType || !projectArea || !projectScope || !totalEstimateVal) return;
 
-        const baseTypeVal = parseInt(projectType.value, 10) || 80000;
+        const baseTypeVal = parseInt(projectType.value, 10) || 550000;
         const areaMultiplier = parseFloat(projectArea.value) || 1.0;
         const scopeMultiplier = parseFloat(projectScope.value) || 1.0;
 
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const areaText = projectArea ? projectArea.options[projectArea.selectedIndex].text : '100 - 150 m²';
             const scopeText = projectScope ? projectScope.options[projectScope.selectedIndex].text : 'Anahtar Teslim Standart';
             const districtText = projectDistrict ? projectDistrict.options[projectDistrict.selectedIndex].text : 'Muratpaşa / Lara';
-            const priceText = totalEstimateVal ? totalEstimateVal.textContent : '₺250.000';
+            const priceText = totalEstimateVal ? totalEstimateVal.textContent : '₺550.000';
 
             // Google Ads / Meta Ads Conversion Trigger
             window.dataLayer.push({
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 currency: 'TRY'
             });
             if (typeof fbq === 'function') {
-                fbq('track', 'Lead', { content_name: 'Tadilat Keşif', value: 250000, currency: 'TRY' });
+                fbq('track', 'Lead', { content_name: 'Tadilat Keşif', value: 550000, currency: 'TRY' });
             }
 
             const message = `Merhaba, AntalyadaTadilat.com.tr üzerinden ulaştım.%0A%0A*ÜCRETSİZ YERİNDE KEŞİF TALEBİ:*%0A• Proje: ${encodeURIComponent(typeText)}%0A• Alan: ${encodeURIComponent(areaText)}%0A• Kapsam: ${encodeURIComponent(scopeText)}%0A• İlçe / Bölge: ${encodeURIComponent(districtText)}%0A• Tahmini Bütçe Aralığı: ${encodeURIComponent(priceText)}%0A%0AMimarınızın keşif için iletişime geçmesini rica ederim.`;
