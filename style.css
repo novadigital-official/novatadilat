@@ -6,9 +6,9 @@
 :root {
     --base-dark: #0F172A;
     --base-card: #1E293B;
-    --accent-gold: #D97706;
-    --accent-gold-hover: #B45309;
-    --accent-light: #FEF3C7;
+    --accent-gold: #C58A2B;
+    --accent-gold-hover: #A7721F;
+    --accent-light: #FDF6E2;
     --surface-light: #F8FAFC;
     --surface-border: #E2E8F0;
     --text-main: #0F172A;
@@ -18,7 +18,7 @@
     --radius-md: 12px;
     --radius-lg: 16px;
     --shadow-soft: 0 4px 20px rgba(15, 23, 42, 0.05);
-    --shadow-gold: 0 4px 15px rgba(217, 119, 6, 0.22);
+    --shadow-gold: 0 6px 20px rgba(197, 138, 43, 0.28);
 }
 
 /* 0. GLOBAL RESET & ZERO-OVERFLOW GUARANTEE */
