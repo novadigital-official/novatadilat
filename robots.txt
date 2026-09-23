@@ -21,4 +21,4 @@ Allow: /
 User-agent: anthropic-ai
 Allow: /
 
-Sitemap: https://antalyadatadilat.com.tr/sitemap.xml
+Sitemap: https://www.antalyadatadilat.com.tr/sitemap.xml
